@@ -199,6 +199,43 @@ a {
 	padding: 1rem;
 }
 
+.menu-nav-item {
+	background-color: #fff !important;
+	border-top-left-radius: 1rem;
+	border-top-right-radius: 1rem;
+	margin-bottom: -2rem;
+}
+
+.menu-nav-item * {
+	color: #4c6fff;
+}
+
+.menu-nav-item .active {
+	width: 100%;
+}
+
+.menu-nav-item .active::after {
+	content: "";
+	display: block;
+	background: #fff;
+	width: 50%;
+	height: 100%;
+	/* position: absolute; */
+	left: 0;
+	top: 100%;
+	padding: 1rem;
+	z-index: 2;
+}
+
+.tab-menu-wrapper {
+	display: none;
+	position: absolute;
+}
+
+.menu-nav-item .tab-menu-wrapper {
+	display: block;
+}
+
 .nav-link {
 	display: flex;
 	align-items: center;
@@ -220,11 +257,77 @@ a {
 	display: flex;
 	align-items: center;
 	font-size: 16px;
+	position: relative;
 }
 
 .language-btn i {
-
 	font-size: 19px;
+}
+
+.languages-container {
+	position: absolute;
+	top: 100%;
+	display: none;
+	/* flex-direction: column; */
+	/* justify-content: center; */
+	left: -50%;
+	z-index: 1000;
+	float: left;
+	min-width: 10rem;
+	padding: .25rem 0;
+	/* padding: 0; */
+	margin: .125rem 0 0;
+	font-size: 1rem;
+	color: #212529;
+	text-align: left;
+	list-style: none;
+	background-color: #fff;
+	background-clip: padding-box;
+	border: 1px solid rgba(0, 0, 0, .15);
+	border-radius: .25rem;
+	border: none;
+}
+
+.language {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	padding: 4px 0;
+}
+
+.language a {
+	color: #212529;
+	width: 100%;
+	text-align: center;
+	font-size: .875rem;
+	padding: 4px 0;
+}
+
+.uzb {
+	border-bottom: 1px solid #c5cede69;
+}
+
+.language a:hover {
+	background-color: #4c6fff;
+	color: #fff;
+}
+
+.languages-container::before {
+	content: "";
+	/* border-width: 1rem; */
+	border-top: 0.75rem solid #fff;
+	border-right: 0.75rem solid transparent;
+	border-left: 0.75rem solid transparent;
+	border-bottom: 0 solid #fff;
+	border-style: solid;
+	position: absolute;
+	left: calc(50% - 10px);
+	font-size: 2rem;
+	/* background-color: #fff; */
+	right: auto;
+	top: -.75rem;
+	z-index: -1;
+	transform: rotate(180deg);
 }
 
 .coworking {
@@ -235,6 +338,12 @@ a {
 	text-decoration: none;
 	font-weight: 500;
 	width: 167px;
+	transition: all 0.2s ease;
+}
+
+.coworking:hover {
+	color: #4c6fff;
+	background-color: #fff;
 }
 
 .bx-log-out {
@@ -649,6 +758,10 @@ a {
 	margin: 0;
 }
 
+.special-day-button {
+	margin-bottom: 3.75rem;
+}
+
 /* FOOTER */
 
 footer {
@@ -703,6 +816,10 @@ footer a:hover {
 	margin-bottom: .5rem;
 }
 
+.footer-logo-container *{
+	font-size: 14px;
+}
+
 
 .footer-contacts {
 	display: flex;
@@ -738,6 +855,24 @@ footer a:hover {
 
 .download-links a {
 	margin-bottom: .75rem;
+}
+
+.footer-second {
+	padding: 2rem 0;
+	text-align: right;
+	padding: 4.5rem 15px 32px;
+}
+
+.footer-second *{
+	font-size: 16px;
+}
+
+.footer-second p {
+	margin: 0;
+}
+
+.footer-second a{
+	font-weight: 600;
 }
 
 /* 

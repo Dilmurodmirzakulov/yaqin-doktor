@@ -1,38 +1,18 @@
 const navLink = document.querySelector(".nav-link")
 const tabMenu = document.querySelector(".tab-menu-wrapper")
 const testLink = document.querySelector(".test-link")
+const menuNavItem = document.querySelector(".menu-nav-item");
+const navItems = document.querySelectorAll(".nav-item")
+const languageBtn = document.querySelector(".language-btn")
+const languagesContainer = document.querySelector(".languages-container")
+navItems.forEach(x=>x.addEventListener("mouseover", ()=>{
+    x.classList.add("menu-nav-item")
+}))
 
-// navLink.addEventListener("mouseover", ()=>{
-//     navLink.classList.add("test-link")
-//     tabMenu.style.display = "block"
-// })
-// navLink.addEventListener("mouseout", ()=>{
-//     navLink.classList.remove("test-link")
-//     tabMenu.style.display = "none"
-// })
-// tabMenu.addEventListener("mouseover", ()=>{
-//     tabMenu.style.display = "block"
-// })
+navItems.forEach(x=>x.addEventListener("mouseout", ()=>{
+    x.classList.remove("menu-nav-item")
+}))
 
-let temp;
-
-navLink.addEventListener("mouseover", ()=>{
-    temp = "test-link"
+languageBtn.addEventListener("click", ()=>{
+    languagesContainer.style.display == 'block' ? languagesContainer.style.display = 'none' : languagesContainer.style.display = 'block'
 })
-tabMenu.addEventListener("mouseover", ()=>{
-    temp = "test-link"
-})
-navLink.addEventListener("mouseout", ()=>{
-    temp = ""
-})
-tabMenu.addEventListener("mouseout", ()=>{
-    temp = ""
-})
-if (temp == "test-link" || temp == "test-link") {
-    navLink.classList.add("test-link")
-    tabMenu.style.display = "block"
-}else if(temp == "" || temp == ""){
-    navLink.classList.remove("test-link")
-    tabMenu.style.display = "none"
-
-}
