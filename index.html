@@ -5,703 +5,192 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <title>Врачи и медицинские центры в Ташкенте и Узбекистане на Yaqin Doctor – удобный сервис по поиску и подбору
-        лучших докторов и клиник в Ташкенте и Узбекистане</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico?v=2">
+    <title>
+        Врачи и медицинские центры в Ташкенте и Узбекистане на Yaqin Doctor – удобный сервис по поиску и подбору лучших
+        докторов и клиник в Ташкенте и Узбекистане
+    </title>
 </head>
 
 <body>
-
-    <header>
-        <nav class="navbar">
-            <div class="container-max-width">
-                <div class="navbar-wrapper">
-                    <img src="./images/logo.png">
-
-                    <ul class="nav-links">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#">
-                                <i class='bx bx-menu'></i>
-                                <span class="menu-text">Меню</span>
-                                <i class='bx bxs-chevron-down menu-bottom-icon'></i>
-                            </a>
-                            <div class="tab-menu-wrapper">
-                                <div class="container-max-width">
-                                    <div class="tab-menu-exterior">
-                                        <div class="tab-menu-container">
-                                            <form action="#">
-                                                <div class="main-tab-inputs">
-                                                    <div class="main-tab-input-container tab-search-from-site">
-                                                        <i class='bx bx-search'></i>
-                                                        <input type="text"
-                                                            placeholder="Поиск клиники, врача, процедуры, анализа">
-                                                    </div>
-                                                    <div class="main-tab-input-container tab-location-input">
-                                                        <i class='bx bx-map'></i>
-                                                        <input type="text" placeholder="Выберите локацию">
-                                                        <i class='bx bx-caret-down'></i>
-                                                    </div>
-                                                    <button class="search-btn" style="margin-top: 0;">Искать</button>
+    <nav class="md-navbar">
+        <div class="container">
+            <div class="md-nav-bars position-relative">
+                <a href="#">
+                    <img src="./images/logo.png" class="nav-logo" alt="">
+                </a>
+                <ul class="md-nav-list md-first-nav">
+                    <li class="md-nav-item">
+                        <a href="#" class="md-nav-link">
+                            <i class="fa-solid fa-bars"></i>
+                            Меню
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+                        <div class="tab-menu-wrapper">
+                            <div class="container">
+                                <div class="tab-menu-exterior">
+                                    <div class="tab-menu-container">
+                                        <form action="#">
+                                            <div class="main-tab-inputs">
+                                                <div class="main-tab-input-container tab-search-from-site">
+                                                    <i class='bx bx-search'></i>
+                                                    <input type="text"
+                                                        placeholder="Поиск клиники, врача, процедуры, анализа">
                                                 </div>
-                                            </form>
-                                            <div class="tab-menu-info-wrapper">
-                                                <div class="tab-menu-info-container">
-                                                    <ul class="tab-menu-nav-list">
-                                                        <li class="tab-nav-item">
-                                                            <a href="#">
-                                                                <img src="./images/icon1.png" alt="">
-                                                                <p> Бактериальный посев</p>
-                                                            </a>
-                                                        </li>
-                                                        <li class="tab-nav-item">
-                                                            <a href="#">
-                                                                <img src="./images/icon2.png" alt="">
-                                                                <p> Генетические тесты</p>
-                                                            </a>
-                                                        </li>
-                                                        <li class="tab-nav-item">
-                                                            <a href="#">
-                                                                <img src="./images/icon3.png" alt="">
-                                                                <p> Кал</p>
-                                                            </a>
-                                                        </li>
-                                                        <li class="tab-nav-item">
-                                                            <a href="#">
-                                                                <img src="./images/icon4.png" alt="">
-                                                                <p> Кровь</p>
-                                                            </a>
-                                                        </li>
-                                                        <li class="tab-nav-item">
-                                                            <a href="#">
-                                                                <img src="./images/icon5.png" alt="">
-                                                                <p> Моча</p>
-                                                            </a>
-                                                        </li>
-                                                        <li class="tab-nav-item">
-                                                            <a href="#">
-                                                                <img src="./images/icon1.png" alt="">
-                                                                <p> Бактериальный посев</p>
-                                                            </a>
-                                                        </li>
-                                                        <li class="tab-nav-item">
-                                                            <a href="#">
-                                                                <img src="./images/icon1.png" alt="">
-                                                                <p> Бактериальный посев</p>
-                                                            </a>
-                                                        </li>
-                                                        <li class="tab-nav-item">
-                                                            <a href="#">
-                                                                <img src="./images/icon1.png" alt="">
-                                                                <p> Бактериальный посев</p>
-                                                            </a>
-                                                        </li>
-                                                        <li class="tab-nav-item">
-                                                            <a href="#">
-                                                                <img src="./images/icon1.png" alt="">
-                                                                <p> Бактериальный посев</p>
-                                                            </a>
-                                                        </li>
-                                                        <li class="tab-nav-item">
-                                                            <a href="#">
-                                                                <img src="./images/icon1.png" alt="">
-                                                                <p> Бактериальный посев</p>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
+                                                <div class="main-tab-input-container tab-location-input">
+                                                    <i class='bx bx-map'></i>
+                                                    <input type="text" placeholder="Выберите локацию">
+                                                    <i class='bx bx-caret-down'></i>
                                                 </div>
-                                                <div class="tab-active-text-info-container">
-                                                    <ul class="tab-active-text-info-list">
-                                                        <li><a href="#" class="">
-                                                                Бактериальный посев грудного молока
-                                                            </a></li>
-                                                        <li><a href="#" class="">
-                                                                Бактериальный посев из глаза
-                                                            </a></li>
-                                                        <li><a href="#" class="">
-                                                                Бактериальный посев из зева
-                                                            </a></li>
-                                                        <li><a href="#" class="">
-                                                                Бактериальный посев из носа
-                                                            </a></li>
-                                                        <li><a href="#" class="">
-                                                                Бактериальный посев из уретры
-                                                            </a></li>
-                                                        <li><a href="#" class="">
-                                                                Бактериальный посев из уха
-                                                            </a></li>
-                                                        <li><a href="#" class="">
-                                                                Бактериальный посев кала
-                                                            </a></li>
-                                                        <li><a href="#" class="">
-                                                                Бактериальный посев мокроты
-                                                            </a></li>
-                                                        <li><a href="#" class="">
-                                                                Бактериальный посев мочи
-                                                            </a></li>
-                                                        <li><a href="#" class="">
-                                                                Бактериальный посев на дисбактериоз
-                                                            </a></li>
-                                                        <li><a href="#" class="">
-                                                                Бактериальный посев спермы
-                                                            </a></li>
-                                                        <li><a href="#" class="">
-                                                                Бактериальный посев(гинекология)
-                                                            </a></li>
-                                                    </ul>
-                                                </div>
+                                                <button class="search-btn" style="margin-top: 0;">Искать</button>
+                                            </div>
+                                        </form>
+                                        <div class="tab-menu-info-wrapper">
+                                            <div class="tab-menu-info-container">
+                                                <ul class="tab-menu-nav-list">
+                                                    <li class="tab-nav-item">
+                                                        <a href="#">
+                                                            <img src="./images/icon1.png" alt="">
+                                                            <p> Бактериальный посев</p>
+                                                        </a>
+                                                    </li>
+                                                    <li class="tab-nav-item">
+                                                        <a href="#">
+                                                            <img src="./images/icon2.png" alt="">
+                                                            <p> Генетические тесты</p>
+                                                        </a>
+                                                    </li>
+                                                    <li class="tab-nav-item">
+                                                        <a href="#">
+                                                            <img src="./images/icon3.png" alt="">
+                                                            <p> Кал</p>
+                                                        </a>
+                                                    </li>
+                                                    <li class="tab-nav-item">
+                                                        <a href="#">
+                                                            <img src="./images/icon4.png" alt="">
+                                                            <p> Кровь</p>
+                                                        </a>
+                                                    </li>
+                                                    <li class="tab-nav-item">
+                                                        <a href="#">
+                                                            <img src="./images/icon5.png" alt="">
+                                                            <p> Моча</p>
+                                                        </a>
+                                                    </li>
+                                                    <li class="tab-nav-item">
+                                                        <a href="#">
+                                                            <img src="./images/icon1.png" alt="">
+                                                            <p> Бактериальный посев</p>
+                                                        </a>
+                                                    </li>
+                                                    <li class="tab-nav-item">
+                                                        <a href="#">
+                                                            <img src="./images/icon1.png" alt="">
+                                                            <p> Бактериальный посев</p>
+                                                        </a>
+                                                    </li>
+                                                    <li class="tab-nav-item">
+                                                        <a href="#">
+                                                            <img src="./images/icon1.png" alt="">
+                                                            <p> Бактериальный посев</p>
+                                                        </a>
+                                                    </li>
+                                                    <li class="tab-nav-item">
+                                                        <a href="#">
+                                                            <img src="./images/icon1.png" alt="">
+                                                            <p> Бактериальный посев</p>
+                                                        </a>
+                                                    </li>
+                                                    <li class="tab-nav-item">
+                                                        <a href="#">
+                                                            <img src="./images/icon1.png" alt="">
+                                                            <p> Бактериальный посев</p>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="tab-active-text-info-container">
+                                                <ul class="tab-active-text-info-list">
+                                                    <li><a href="#" class="">
+                                                            Бактериальный посев грудного молока
+                                                        </a></li>
+                                                    <li><a href="#" class="">
+                                                            Бактериальный посев из глаза
+                                                        </a></li>
+                                                    <li><a href="#" class="">
+                                                            Бактериальный посев из зева
+                                                        </a></li>
+                                                    <li><a href="#" class="">
+                                                            Бактериальный посев из носа
+                                                        </a></li>
+                                                    <li><a href="#" class="">
+                                                            Бактериальный посев из уретры
+                                                        </a></li>
+                                                    <li><a href="#" class="">
+                                                            Бактериальный посев из уха
+                                                        </a></li>
+                                                    <li><a href="#" class="">
+                                                            Бактериальный посев кала
+                                                        </a></li>
+                                                    <li><a href="#" class="">
+                                                            Бактериальный посев мокроты
+                                                        </a></li>
+                                                    <li><a href="#" class="">
+                                                            Бактериальный посев мочи
+                                                        </a></li>
+                                                    <li><a href="#" class="">
+                                                            Бактериальный посев на дисбактериоз
+                                                        </a></li>
+                                                    <li><a href="#" class="">
+                                                            Бактериальный посев спермы
+                                                        </a></li>
+                                                    <li><a href="#" class="">
+                                                            Бактериальный посев(гинекология)
+                                                        </a></li>
+                                                </ul>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <span class="nav-text">Врачи</span>
-                                <i class='bx bxs-chevron-down'></i>
-                            </a>
-                            <div class="tab-menu-wrapper">
-                                <div class="container-max-width">
-                                    <div class="tab-menu-exterior">
-                                        <div class="tab-menu-container">
-                                            <form action="#">
-                                                <div class="main-tab-inputs">
-                                                    <div class="main-tab-input-container tab-search-from-site">
-                                                        <i class='bx bx-search'></i>
-                                                        <input type="text"
-                                                            placeholder="Поиск клиники, врача, процедуры, анализа">
-                                                    </div>
-                                                    <div class="main-tab-input-container tab-location-input">
-                                                        <i class='bx bx-map'></i>
-                                                        <input type="text" placeholder="Выберите локацию">
-                                                        <i class='bx bx-caret-down'></i>
-                                                    </div>
-                                                    <button class="search-btn" style="margin-top: 0;">Искать</button>
-                                                </div>
-                                            </form>
-                                            <div class="tab-menu-info-wrapper">
-                                                <div class="tab-menu-info-container">
-                                                    <ul class="tab-menu-nav-list">
-                                                        <li class="tab-nav-item">
-                                                            <a href="#">
-                                                                <img src="./images/icon1.png" alt="">
-                                                                <p> Бактериальный посев</p>
-                                                            </a>
-                                                        </li>
-                                                        <li class="tab-nav-item">
-                                                            <a href="#">
-                                                                <img src="./images/icon2.png" alt="">
-                                                                <p> Генетические тесты</p>
-                                                            </a>
-                                                        </li>
-                                                        <li class="tab-nav-item">
-                                                            <a href="#">
-                                                                <img src="./images/icon3.png" alt="">
-                                                                <p> Кал</p>
-                                                            </a>
-                                                        </li>
-                                                        <li class="tab-nav-item">
-                                                            <a href="#">
-                                                                <img src="./images/icon4.png" alt="">
-                                                                <p> Кровь</p>
-                                                            </a>
-                                                        </li>
-                                                        <li class="tab-nav-item">
-                                                            <a href="#">
-                                                                <img src="./images/icon5.png" alt="">
-                                                                <p> Моча</p>
-                                                            </a>
-                                                        </li>
-                                                        <li class="tab-nav-item">
-                                                            <a href="#">
-                                                                <img src="./images/icon1.png" alt="">
-                                                                <p> Бактериальный посев</p>
-                                                            </a>
-                                                        </li>
-                                                        <li class="tab-nav-item">
-                                                            <a href="#">
-                                                                <img src="./images/icon1.png" alt="">
-                                                                <p> Бактериальный посев</p>
-                                                            </a>
-                                                        </li>
-                                                        <li class="tab-nav-item">
-                                                            <a href="#">
-                                                                <img src="./images/icon1.png" alt="">
-                                                                <p> Бактериальный посев</p>
-                                                            </a>
-                                                        </li>
-                                                        <li class="tab-nav-item">
-                                                            <a href="#">
-                                                                <img src="./images/icon1.png" alt="">
-                                                                <p> Бактериальный посев</p>
-                                                            </a>
-                                                        </li>
-                                                        <li class="tab-nav-item">
-                                                            <a href="#">
-                                                                <img src="./images/icon1.png" alt="">
-                                                                <p> Бактериальный посев</p>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div class="tab-active-text-info-container">
-                                                    <ul class="tab-active-text-info-list">
-                                                        <li><a href="#" class="">
-                                                                Бактериальный посев грудного молока
-                                                            </a></li>
-                                                        <li><a href="#" class="">
-                                                                Бактериальный посев из глаза
-                                                            </a></li>
-                                                        <li><a href="#" class="">
-                                                                Бактериальный посев из зева
-                                                            </a></li>
-                                                        <li><a href="#" class="">
-                                                                Бактериальный посев из носа
-                                                            </a></li>
-                                                        <li><a href="#" class="">
-                                                                Бактериальный посев из уретры
-                                                            </a></li>
-                                                        <li><a href="#" class="">
-                                                                Бактериальный посев из уха
-                                                            </a></li>
-                                                        <li><a href="#" class="">
-                                                                Бактериальный посев кала
-                                                            </a></li>
-                                                        <li><a href="#" class="">
-                                                                Бактериальный посев мокроты
-                                                            </a></li>
-                                                        <li><a href="#" class="">
-                                                                Бактериальный посев мочи
-                                                            </a></li>
-                                                        <li><a href="#" class="">
-                                                                Бактериальный посев на дисбактериоз
-                                                            </a></li>
-                                                        <li><a href="#" class="">
-                                                                Бактериальный посев спермы
-                                                            </a></li>
-                                                        <li><a href="#" class="">
-                                                                Бактериальный посев(гинекология)
-                                                            </a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <span class="nav-text">Процедуры</span>
-                                <i class='bx bxs-chevron-down'></i>
-                            </a>
-                            <div class="tab-menu-wrapper">
-                                <div class="container-max-width">
-                                    <div class="tab-menu-exterior">
-                                        <div class="tab-menu-container">
-                                            <form action="#">
-                                                <div class="main-tab-inputs">
-                                                    <div class="main-tab-input-container tab-search-from-site">
-                                                        <i class='bx bx-search'></i>
-                                                        <input type="text"
-                                                            placeholder="Поиск клиники, врача, процедуры, анализа">
-                                                    </div>
-                                                    <div class="main-tab-input-container tab-location-input">
-                                                        <i class='bx bx-map'></i>
-                                                        <input type="text" placeholder="Выберите локацию">
-                                                        <i class='bx bx-caret-down'></i>
-                                                    </div>
-                                                    <button class="search-btn" style="margin-top: 0;">Искать</button>
-                                                </div>
-                                            </form>
-                                            <div class="tab-menu-info-wrapper">
-                                                <div class="tab-menu-info-container">
-                                                    <ul class="tab-menu-nav-list">
-                                                        <li class="tab-nav-item">
-                                                            <a href="#">
-                                                                <img src="./images/icon1.png" alt="">
-                                                                <p> Бактериальный посев</p>
-                                                            </a>
-                                                        </li>
-                                                        <li class="tab-nav-item">
-                                                            <a href="#">
-                                                                <img src="./images/icon2.png" alt="">
-                                                                <p> Генетические тесты</p>
-                                                            </a>
-                                                        </li>
-                                                        <li class="tab-nav-item">
-                                                            <a href="#">
-                                                                <img src="./images/icon3.png" alt="">
-                                                                <p> Кал</p>
-                                                            </a>
-                                                        </li>
-                                                        <li class="tab-nav-item">
-                                                            <a href="#">
-                                                                <img src="./images/icon4.png" alt="">
-                                                                <p> Кровь</p>
-                                                            </a>
-                                                        </li>
-                                                        <li class="tab-nav-item">
-                                                            <a href="#">
-                                                                <img src="./images/icon5.png" alt="">
-                                                                <p> Моча</p>
-                                                            </a>
-                                                        </li>
-                                                        <li class="tab-nav-item">
-                                                            <a href="#">
-                                                                <img src="./images/icon1.png" alt="">
-                                                                <p> Бактериальный посев</p>
-                                                            </a>
-                                                        </li>
-                                                        <li class="tab-nav-item">
-                                                            <a href="#">
-                                                                <img src="./images/icon1.png" alt="">
-                                                                <p> Бактериальный посев</p>
-                                                            </a>
-                                                        </li>
-                                                        <li class="tab-nav-item">
-                                                            <a href="#">
-                                                                <img src="./images/icon1.png" alt="">
-                                                                <p> Бактериальный посев</p>
-                                                            </a>
-                                                        </li>
-                                                        <li class="tab-nav-item">
-                                                            <a href="#">
-                                                                <img src="./images/icon1.png" alt="">
-                                                                <p> Бактериальный посев</p>
-                                                            </a>
-                                                        </li>
-                                                        <li class="tab-nav-item">
-                                                            <a href="#">
-                                                                <img src="./images/icon1.png" alt="">
-                                                                <p> Бактериальный посев</p>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div class="tab-active-text-info-container">
-                                                    <ul class="tab-active-text-info-list">
-                                                        <li><a href="#" class="">
-                                                                Бактериальный посев грудного молока
-                                                            </a></li>
-                                                        <li><a href="#" class="">
-                                                                Бактериальный посев из глаза
-                                                            </a></li>
-                                                        <li><a href="#" class="">
-                                                                Бактериальный посев из зева
-                                                            </a></li>
-                                                        <li><a href="#" class="">
-                                                                Бактериальный посев из носа
-                                                            </a></li>
-                                                        <li><a href="#" class="">
-                                                                Бактериальный посев из уретры
-                                                            </a></li>
-                                                        <li><a href="#" class="">
-                                                                Бактериальный посев из уха
-                                                            </a></li>
-                                                        <li><a href="#" class="">
-                                                                Бактериальный посев кала
-                                                            </a></li>
-                                                        <li><a href="#" class="">
-                                                                Бактериальный посев мокроты
-                                                            </a></li>
-                                                        <li><a href="#" class="">
-                                                                Бактериальный посев мочи
-                                                            </a></li>
-                                                        <li><a href="#" class="">
-                                                                Бактериальный посев на дисбактериоз
-                                                            </a></li>
-                                                        <li><a href="#" class="">
-                                                                Бактериальный посев спермы
-                                                            </a></li>
-                                                        <li><a href="#" class="">
-                                                                Бактериальный посев(гинекология)
-                                                            </a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <span class="nav-text">Анализы</span>
-                                <i class='bx bxs-chevron-down'></i>
-                            </a>
-                            <div class="tab-menu-wrapper">
-                                <div class="container-max-width">
-                                    <div class="tab-menu-exterior">
-                                        <div class="tab-menu-container">
-                                            <form action="#">
-                                                <div class="main-tab-inputs">
-                                                    <div class="main-tab-input-container tab-search-from-site">
-                                                        <i class='bx bx-search'></i>
-                                                        <input type="text"
-                                                            placeholder="Поиск клиники, врача, процедуры, анализа">
-                                                    </div>
-                                                    <div class="main-tab-input-container tab-location-input">
-                                                        <i class='bx bx-map'></i>
-                                                        <input type="text" placeholder="Выберите локацию">
-                                                        <i class='bx bx-caret-down'></i>
-                                                    </div>
-                                                    <button class="search-btn" style="margin-top: 0;">Искать</button>
-                                                </div>
-                                            </form>
-                                            <div class="tab-menu-info-wrapper">
-                                                <div class="tab-menu-info-container">
-                                                    <ul class="tab-menu-nav-list">
-                                                        <li class="tab-nav-item">
-                                                            <a href="#">
-                                                                <img src="./images/icon1.png" alt="">
-                                                                <p> Бактериальный посев</p>
-                                                            </a>
-                                                        </li>
-                                                        <li class="tab-nav-item">
-                                                            <a href="#">
-                                                                <img src="./images/icon2.png" alt="">
-                                                                <p> Генетические тесты</p>
-                                                            </a>
-                                                        </li>
-                                                        <li class="tab-nav-item">
-                                                            <a href="#">
-                                                                <img src="./images/icon3.png" alt="">
-                                                                <p> Кал</p>
-                                                            </a>
-                                                        </li>
-                                                        <li class="tab-nav-item">
-                                                            <a href="#">
-                                                                <img src="./images/icon4.png" alt="">
-                                                                <p> Кровь</p>
-                                                            </a>
-                                                        </li>
-                                                        <li class="tab-nav-item">
-                                                            <a href="#">
-                                                                <img src="./images/icon5.png" alt="">
-                                                                <p> Моча</p>
-                                                            </a>
-                                                        </li>
-                                                        <li class="tab-nav-item">
-                                                            <a href="#">
-                                                                <img src="./images/icon1.png" alt="">
-                                                                <p> Бактериальный посев</p>
-                                                            </a>
-                                                        </li>
-                                                        <li class="tab-nav-item">
-                                                            <a href="#">
-                                                                <img src="./images/icon1.png" alt="">
-                                                                <p> Бактериальный посев</p>
-                                                            </a>
-                                                        </li>
-                                                        <li class="tab-nav-item">
-                                                            <a href="#">
-                                                                <img src="./images/icon1.png" alt="">
-                                                                <p> Бактериальный посев</p>
-                                                            </a>
-                                                        </li>
-                                                        <li class="tab-nav-item">
-                                                            <a href="#">
-                                                                <img src="./images/icon1.png" alt="">
-                                                                <p> Бактериальный посев</p>
-                                                            </a>
-                                                        </li>
-                                                        <li class="tab-nav-item">
-                                                            <a href="#">
-                                                                <img src="./images/icon1.png" alt="">
-                                                                <p> Бактериальный посев</p>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div class="tab-active-text-info-container">
-                                                    <ul class="tab-active-text-info-list">
-                                                        <li><a href="#" class="">
-                                                                Бактериальный посев грудного молока
-                                                            </a></li>
-                                                        <li><a href="#" class="">
-                                                                Бактериальный посев из глаза
-                                                            </a></li>
-                                                        <li><a href="#" class="">
-                                                                Бактериальный посев из зева
-                                                            </a></li>
-                                                        <li><a href="#" class="">
-                                                                Бактериальный посев из носа
-                                                            </a></li>
-                                                        <li><a href="#" class="">
-                                                                Бактериальный посев из уретры
-                                                            </a></li>
-                                                        <li><a href="#" class="">
-                                                                Бактериальный посев из уха
-                                                            </a></li>
-                                                        <li><a href="#" class="">
-                                                                Бактериальный посев кала
-                                                            </a></li>
-                                                        <li><a href="#" class="">
-                                                                Бактериальный посев мокроты
-                                                            </a></li>
-                                                        <li><a href="#" class="">
-                                                                Бактериальный посев мочи
-                                                            </a></li>
-                                                        <li><a href="#" class="">
-                                                                Бактериальный посев на дисбактериоз
-                                                            </a></li>
-                                                        <li><a href="#" class="">
-                                                                Бактериальный посев спермы
-                                                            </a></li>
-                                                        <li><a href="#" class="">
-                                                                Бактериальный посев(гинекология)
-                                                            </a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <span class="nav-text">Онлайн консультация</span>
-                            </a>
-                            <div class="tab-menu-wrapper">
-                                <div class="container-max-width">
-                                    <div class="tab-menu-exterior">
-                                        <div class="tab-menu-container">
-                                            <form action="#">
-                                                <div class="main-tab-inputs">
-                                                    <div class="main-tab-input-container tab-search-from-site">
-                                                        <i class='bx bx-search'></i>
-                                                        <input type="text"
-                                                            placeholder="Поиск клиники, врача, процедуры, анализа">
-                                                    </div>
-                                                    <div class="main-tab-input-container tab-location-input">
-                                                        <i class='bx bx-map'></i>
-                                                        <input type="text" placeholder="Выберите локацию">
-                                                        <i class='bx bx-caret-down'></i>
-                                                    </div>
-                                                    <button class="search-btn" style="margin-top: 0;">Искать</button>
-                                                </div>
-                                            </form>
-                                            <div class="tab-menu-info-wrapper">
-                                                <div class="tab-menu-info-container">
-                                                    <ul class="tab-menu-nav-list">
-                                                        <li class="tab-nav-item">
-                                                            <a href="#">
-                                                                <img src="./images/icon1.png" alt="">
-                                                                <p> Бактериальный посев</p>
-                                                            </a>
-                                                        </li>
-                                                        <li class="tab-nav-item">
-                                                            <a href="#">
-                                                                <img src="./images/icon2.png" alt="">
-                                                                <p> Генетические тесты</p>
-                                                            </a>
-                                                        </li>
-                                                        <li class="tab-nav-item">
-                                                            <a href="#">
-                                                                <img src="./images/icon3.png" alt="">
-                                                                <p> Кал</p>
-                                                            </a>
-                                                        </li>
-                                                        <li class="tab-nav-item">
-                                                            <a href="#">
-                                                                <img src="./images/icon4.png" alt="">
-                                                                <p> Кровь</p>
-                                                            </a>
-                                                        </li>
-                                                        <li class="tab-nav-item">
-                                                            <a href="#">
-                                                                <img src="./images/icon5.png" alt="">
-                                                                <p> Моча</p>
-                                                            </a>
-                                                        </li>
-                                                        <li class="tab-nav-item">
-                                                            <a href="#">
-                                                                <img src="./images/icon1.png" alt="">
-                                                                <p> Бактериальный посев</p>
-                                                            </a>
-                                                        </li>
-                                                        <li class="tab-nav-item">
-                                                            <a href="#">
-                                                                <img src="./images/icon1.png" alt="">
-                                                                <p> Бактериальный посев</p>
-                                                            </a>
-                                                        </li>
-                                                        <li class="tab-nav-item">
-                                                            <a href="#">
-                                                                <img src="./images/icon1.png" alt="">
-                                                                <p> Бактериальный посев</p>
-                                                            </a>
-                                                        </li>
-                                                        <li class="tab-nav-item">
-                                                            <a href="#">
-                                                                <img src="./images/icon1.png" alt="">
-                                                                <p> Бактериальный посев</p>
-                                                            </a>
-                                                        </li>
-                                                        <li class="tab-nav-item">
-                                                            <a href="#">
-                                                                <img src="./images/icon1.png" alt="">
-                                                                <p> Бактериальный посев</p>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div class="tab-active-text-info-container">
-                                                    <ul class="tab-active-text-info-list">
-                                                        <li><a href="#" class="">
-                                                                Бактериальный посев грудного молока
-                                                            </a></li>
-                                                        <li><a href="#" class="">
-                                                                Бактериальный посев из глаза
-                                                            </a></li>
-                                                        <li><a href="#" class="">
-                                                                Бактериальный посев из зева
-                                                            </a></li>
-                                                        <li><a href="#" class="">
-                                                                Бактериальный посев из носа
-                                                            </a></li>
-                                                        <li><a href="#" class="">
-                                                                Бактериальный посев из уретры
-                                                            </a></li>
-                                                        <li><a href="#" class="">
-                                                                Бактериальный посев из уха
-                                                            </a></li>
-                                                        <li><a href="#" class="">
-                                                                Бактериальный посев кала
-                                                            </a></li>
-                                                        <li><a href="#" class="">
-                                                                Бактериальный посев мокроты
-                                                            </a></li>
-                                                        <li><a href="#" class="">
-                                                                Бактериальный посев мочи
-                                                            </a></li>
-                                                        <li><a href="#" class="">
-                                                                Бактериальный посев на дисбактериоз
-                                                            </a></li>
-                                                        <li><a href="#" class="">
-                                                                Бактериальный посев спермы
-                                                            </a></li>
-                                                        <li><a href="#" class="">
-                                                                Бактериальный посев(гинекология)
-                                                            </a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                    <div class="nav-btns">
-                        <button class="language-btn">
-                            <i class='bx bx-globe'></i> &nbsp;Рус
+                        </div>
+                    </li>
+                    <li class="md-nav-item">
+                        <a href="#" class="md-nav-link">
+                            Врачи
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+                    </li>
+                    <li class="md-nav-item">
+                        <a href="#" class="md-nav-link">
+                            Процедуры
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+                    </li>
+                    <li class="md-nav-item">
+                        <a href="#" class="md-nav-link">
+                            Анализы
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+                    </li>
+                    <li class="md-nav-item">
+                        <a href="#" class="md-nav-link">
+                            Онлайн консультация
+                        </a>
+                    </li>
+                </ul>
+                <ul class="md-nav-list">
+                    <li>
+                        <button class="md-nav-link language-btn">
+                            <i class="fa-solid fa-globe"></i>&nbsp;
+                            Рус
                             <ul class="languages-container">
                                 <li class="language uzb">
                                     <a href="#">Uzb</a>
@@ -711,361 +200,392 @@
                                 </li>
                             </ul>
                         </button>
-                        <a href="#" class="coworking">Сотрудничество</a>
-                        <a href="#"><i class='bx bx-log-out'></i></a>
-                    </div>
-                </div>
+                    </li>
+                    <li class="md-nav-item">
+                        <a href="#" class="md-nav-link coworking">
+                            Сотрудничество
+                        </a>
+                    </li>
+                    <li class="md-nav-item">
+                        <a href="#" class="md-nav-link log-out">
+                            <i class="fa-solid fa-right-from-bracket"></i>
+                        </a>
+                    </li>
+                    <button class="md-menu-bar">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </ul>
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
+
     <section>
-        <img src="./images/ellips.png" width="100%" height="auto" alt="">
-        <div class="container-max-width main-header-section">
-            <div class="main-header">
-                <div class="main-header-info">
-                    <h1>Все клиники и врачи у вас на ладони! </h1>
-                    <p class="comp-desc">
-                        <b style="color: rgb(76, 111, 255);">Yaqin Doctor</b> - это быстрый и очень удобный
+        <img src="./images/ellips.png" class="md-ellips" alt="">
+        <div class="row container md-main-header-container">
+            <div class="col-lg-7">
+                <div class="md-main-header-content">
+                    <h1>Все клиники и врачи у вас на ладони!</h1>
+                    <p class="header-text">
+                        <b>Yaqin Doctor</b> - это быстрый и очень удобный
                         информационно-медицинский сервис
                     </p>
-                    <form action="#">
-                        <div class="main-header-inputs">
-                            <div class="main-header-input-container search-from-site">
-                                <i class='bx bx-search'></i>
-                                <input type="text" placeholder="Поиск клиники, врача, процедуры, анализа">
+                </div>
+                <div class="sm-image-form">
+                    <div class="col-12 sm-image">
+                        <img src="./images/main-header.png" class="img-fluid" alt="">
+                    </div>
+                    <form action="#" class="md-form col-sm-12">
+                        <div class="row md-header-inputs row">
+                            <div class="col-lg-7">
+                                <div class="md-input-container">
+                                    <i class='fa fa-search'></i>
+                                    <input type="text" placeholder="Поиск клиники, врача, процедуры, анализа">
+                                </div>
                             </div>
-                            <div class="main-header-input-container location-input">
-                                <i class='bx bx-map'></i>
-                                <input type="text" placeholder="Выберите локацию">
-                                <i class='bx bx-caret-down'></i>
+                            <div class="col-lg-5">
+                                <div class="md-input-container">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    <input type="text" placeholder="Выберите локацию">
+                                    <button class="btn">
+                                        <i class='fa fa-caret-down'></i>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                         <button class="search-btn">Искать</button>
                     </form>
                 </div>
-                <div class="main-header-img">
-                    <img src="./images/main-header.png" alt="">
-                </div>
+            </div>
+            <div class="col-lg-5 lg-image">
+                <img src="./images/main-header.png" class="img-fluid" alt="">
             </div>
         </div>
     </section>
 
-    <section class="service-section">
-        <div class="container-max-width service-section">
-            <div class="service-section-up">
-                <div class="service-header">
-                    Медицинские сервисы
-                </div>
-                <button class="go-to-abroad">
-                    <img src="./images/plane.png" class="plane-img" alt="">
-                    Лечение за границей
-                </button>
+    <section class="service-bg">
+        <div class="container">
+            <div class="service-header">
+                <h2>Медицинские сервисы</h2>
+                <a href="#" class="go-abroat">
+                    <img src="./images/plane.png" alt="">&nbsp;
+                    <b>Лечение за границей</b>
+                </a>
             </div>
-            <div class="row">
-                <div class="col-4 col-lg-3 service-container">
-                    <a href="#" class="service-inner">
-                        <img class="cervice-img" src="https://panel.yaqin-doctor.uz/uploads/icons/1.svg" alt="">
-                        <p>Врачи</p>
+            <div class="row service-cards">
+                <div class="col-4 col-lg-3 service-card">
+                    <a href="#" class="service-card-link">
+                        <img src="https://panel.yaqin-doctor.uz/uploads/icons/1.svg" class="service-img" alt="">
+                        <p class="service-card-text">Врачи</p>
                     </a>
                 </div>
-                <div class="col-4 col-lg-3 service-container">
-                    <a href="#" class="service-inner">
-                        <img class="cervice-img" src="https://panel.yaqin-doctor.uz/uploads/icons/2.svg" alt="">
-                        <p>Процедуры</p>
+                <div class="col-4 col-lg-3 service-card">
+                    <a href="#" class="service-card-link">
+                        <img src="https://panel.yaqin-doctor.uz/uploads/icons/1.svg" class="service-img" alt="">
+                        <p class="service-card-text">Врачи</p>
                     </a>
                 </div>
-                <div class="col-4 col-lg-3 service-container">
-                    <a href="#" class="service-inner">
-                        <img class="cervice-img" src="https://panel.yaqin-doctor.uz/uploads/icons/3.svg" alt="">
-                        <p>Анализы</p>
+                <div class="col-4 col-lg-3 service-card">
+                    <a href="#" class="service-card-link">
+                        <img src="https://panel.yaqin-doctor.uz/uploads/icons/1.svg" class="service-img" alt="">
+                        <p class="service-card-text">Врачи</p>
                     </a>
                 </div>
-                <div class="col-4 col-lg-3 service-container">
-                    <a href="#" class="service-inner">
-                        <img class="cervice-img" src="https://panel.yaqin-doctor.uz/uploads/icons/5.svg" alt="">
-                        <p> Covid-19</p>
+                <div class="col-4 col-lg-3 service-card">
+                    <a href="#" class="service-card-link">
+                        <img src="https://panel.yaqin-doctor.uz/uploads/icons/1.svg" class="service-img" alt="">
+                        <p class="service-card-text">Врачи</p>
                     </a>
                 </div>
-                <div class="col-4 col-lg-3 service-container">
-                    <a href="#" class="service-inner">
-                        <img class="cervice-img" src="https://panel.yaqin-doctor.uz/uploads/icons/4.svg" alt="">
-                        <p> Вакцинация</p>
+                <div class="col-4 col-lg-3 service-card">
+                    <a href="#" class="service-card-link">
+                        <img src="https://panel.yaqin-doctor.uz/uploads/icons/1.svg" class="service-img" alt="">
+                        <p class="service-card-text">Врачи</p>
                     </a>
                 </div>
-                <div class="col-4 col-lg-3 service-container">
-                    <a href="#" class="service-inner">
-                        <img class="cervice-img" src="https://panel.yaqin-doctor.uz/uploads/icons/11.svg" alt="">
-                        <p>Лаборатория на выезд</p>
+                <div class="col-4 col-lg-3 service-card">
+                    <a href="#" class="service-card-link">
+                        <img src="https://panel.yaqin-doctor.uz/uploads/icons/1.svg" class="service-img" alt="">
+                        <p class="service-card-text">Врачи</p>
                     </a>
                 </div>
-                <div class="col-4 col-lg-3 service-container">
-                    <a href="#" class="service-inner">
-                        <img class="cervice-img" src="https://panel.yaqin-doctor.uz/uploads/icons/7.svg" alt="">
-                        <p> Скорая помощь</p>
+                <div class="col-4 col-lg-3 service-card">
+                    <a href="#" class="service-card-link">
+                        <img src="https://panel.yaqin-doctor.uz/uploads/icons/1.svg" class="service-img" alt="">
+                        <p class="service-card-text">Врачи</p>
                     </a>
                 </div>
-                <div class="col-4 col-lg-3 service-container">
-                    <a href="#" class="service-inner">
-                        <img class="cervice-img" src="https://panel.yaqin-doctor.uz/uploads/icons/9.svg" alt="">
-                        <p>Круглосуточная помощь</p>
+                <div class="col-4 col-lg-3 service-card">
+                    <a href="#" class="service-card-link">
+                        <img src="https://panel.yaqin-doctor.uz/uploads/icons/1.svg" class="service-img" alt="">
+                        <p class="service-card-text">Врачи</p>
                     </a>
                 </div>
-                <div class="col-4 col-lg-3 service-container">
-                    <a href="#" class="service-inner">
-                        <img class="cervice-img" src="https://panel.yaqin-doctor.uz/uploads/icons/6.svg" alt="">
-                        <p>Стационар</p>
+                <div class="col-4 col-lg-3 service-card">
+                    <a href="#" class="service-card-link">
+                        <img src="https://panel.yaqin-doctor.uz/uploads/icons/1.svg" class="service-img" alt="">
+                        <p class="service-card-text">Врачи</p>
                     </a>
                 </div>
-                <div class="col-4 col-lg-3 service-container">
-                    <a href="#" class="service-inner">
-                        <img class="cervice-img" src="https://panel.yaqin-doctor.uz/uploads/icons/12.svg" alt="">
-                        <p>Эстетическая медицина</p>
+                <div class="col-4 col-lg-3 service-card">
+                    <a href="#" class="service-card-link">
+                        <img src="https://panel.yaqin-doctor.uz/uploads/icons/1.svg" class="service-img" alt="">
+                        <p class="service-card-text">Врачи</p>
                     </a>
                 </div>
-                <div class="col-4 col-lg-3 service-container">
-                    <a href="#" class="service-inner">
-                        <img class="cervice-img" src="https://panel.yaqin-doctor.uz/uploads/icons/10.svg" alt="">
-                        <p>Круглосуточные аптеки</p>
+                <div class="col-4 col-lg-3 service-card">
+                    <a href="#" class="service-card-link">
+                        <img src="https://panel.yaqin-doctor.uz/uploads/icons/1.svg" class="service-img" alt="">
+                        <p class="service-card-text">Врачи</p>
                     </a>
                 </div>
-                <div class="col-4 col-lg-3 service-container">
-                    <a href="#" class="service-inner">
-                        <img class="cervice-img" src="https://panel.yaqin-doctor.uz/uploads/icons/8.svg" alt="">
-                        <p>Акции</p>
+                <div class="col-4 col-lg-3 service-card">
+                    <a href="#" class="service-card-link">
+                        <img src="https://panel.yaqin-doctor.uz/uploads/icons/1.svg" class="service-img" alt="">
+                        <p class="service-card-text">Врачи</p>
                     </a>
+                </div>
+            </div>
+            <a href="#" class="go-abroat go-abroat1">
+                <img src="./images/plane.png" alt="">&nbsp;
+                <b>Лечение за границей</b>
+            </a>
+        </div>
+    </section>
+
+    <section class="all-services-pd">
+        <div class="container">
+            <div class="md-all-services">
+                <div class="md-all-service-border">
+                    <div class="md-all-service">
+                        <h2 class="all-service-header">
+                            Врачи
+                        </h2>
+                        <div class="all-service-list">
+                            <a href="#" class="service-list_item">
+                                Эндокринолог <span class="service-number">70</span>
+                            </a>
+                            <a href="#" class="service-list_item">
+                                Лор <span class="service-number">110</span>
+                            </a>
+                            <a href="#" class="service-list_item">
+                                Терапевт <span class="service-number">152</span>
+                            </a>
+                            <a href="#" class="service-list_item">
+                                Гинеколог <span class="service-number">116</span>
+                            </a>
+                            <a href="#" class="service-list_item">
+                                Маммолог <span class="service-number">9</span>
+                            </a>
+                            <a href="#" class="service-list_item">
+                                Детский невропатолог <span class="service-number">15</span>
+                            </a>
+                            <a href="#" class="service-list_item">
+                                Невролог <span class="service-number">56</span>
+                            </a>
+                            <a href="#" class="service-list_item">
+                                Уролог <span class="service-number">88</span>
+                            </a>
+                            <a href="#" class="service-list_item">
+                                Узист <span class="service-number">124</span>
+                            </a>
+                            <a href="#" class="service-list_item">
+                                Психоневролог <span class="service-number">3</span>
+                            </a>
+                            <a href="#" class="service-list_item">
+                                Глазной врач <span class="service-number">59</span>
+                            </a>
+                            <a href="#" class="service-list_item">
+                                Травматолог <span class="service-number">32</span>
+                            </a>
+                            <a href="#" class="service-list_item">
+                                Вертебролог <span class="service-number">7</span>
+                            </a>
+                            <a href="#" class="service-list_item">
+                                Ортопед <span class="service-number">65</span>
+                            </a>
+                            <a href="#" class="service-list_item">
+                                Инфекционист <span class="service-number">8</span>
+                            </a>
+                            <a href="#" class="service-list_item">
+                                Кардиолог <span class="service-number">138</span>
+                            </a>
+                            <a href="#" class="service-list_item">
+                                Аллерголог <span class="service-number">18</span>
+                            </a>
+                            <a href="#" class="service-list_item">
+                                Стоматолог <span class="service-number">78</span>
+                            </a>
+                            <a href="#" class="service-list_item">
+                                Дерматолог <span class="service-number">30</span>
+                            </a>
+                            <a href="#" class="service-list_item">
+                                Логопед <span class="service-number">5</span>
+                            </a>
+                            <a href="#" class="service-list_item">
+                                Гастроэнтеролог <span class="service-number">38</span>
+                            </a>
+                            <a href="#" class="service-list_item">
+                                Все 113 специальности
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="md-all-service-border">
+                    <div class="md-all-service">
+                        <h2 class="all-service-header">
+                            Врачи
+                        </h2>
+                        <div class="all-service-list">
+                            <a href="#" class="service-list_item">
+                                Эндокринолог <span class="service-number">70</span>
+                            </a>
+                            <a href="#" class="service-list_item">
+                                Лор <span class="service-number">110</span>
+                            </a>
+                            <a href="#" class="service-list_item">
+                                Терапевт <span class="service-number">152</span>
+                            </a>
+                            <a href="#" class="service-list_item">
+                                Гинеколог <span class="service-number">116</span>
+                            </a>
+                            <a href="#" class="service-list_item">
+                                Маммолог <span class="service-number">9</span>
+                            </a>
+                            <a href="#" class="service-list_item">
+                                Детский невропатолог <span class="service-number">15</span>
+                            </a>
+                            <a href="#" class="service-list_item">
+                                Невролог <span class="service-number">56</span>
+                            </a>
+                            <a href="#" class="service-list_item">
+                                Уролог <span class="service-number">88</span>
+                            </a>
+                            <a href="#" class="service-list_item">
+                                Узист <span class="service-number">124</span>
+                            </a>
+                            <a href="#" class="service-list_item">
+                                Психоневролог <span class="service-number">3</span>
+                            </a>
+                            <a href="#" class="service-list_item">
+                                Глазной врач <span class="service-number">59</span>
+                            </a>
+                            <a href="#" class="service-list_item">
+                                Травматолог <span class="service-number">32</span>
+                            </a>
+                            <a href="#" class="service-list_item">
+                                Вертебролог <span class="service-number">7</span>
+                            </a>
+                            <a href="#" class="service-list_item">
+                                Ортопед <span class="service-number">65</span>
+                            </a>
+                            <a href="#" class="service-list_item">
+                                Инфекционист <span class="service-number">8</span>
+                            </a>
+                            <a href="#" class="service-list_item">
+                                Кардиолог <span class="service-number">138</span>
+                            </a>
+                            <a href="#" class="service-list_item">
+                                Аллерголог <span class="service-number">18</span>
+                            </a>
+                            <a href="#" class="service-list_item">
+                                Стоматолог <span class="service-number">78</span>
+                            </a>
+                            <a href="#" class="service-list_item">
+                                Дерматолог <span class="service-number">30</span>
+                            </a>
+                            <a href="#" class="service-list_item">
+                                Логопед <span class="service-number">5</span>
+                            </a>
+                            <a href="#" class="service-list_item">
+                                Гастроэнтеролог <span class="service-number">38</span>
+                            </a>
+                            <a href="#" class="service-list_item">
+                                Все 113 специальности
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="md-all-service-border">
+                    <div class="md-all-service">
+                        <h2 class="all-service-header">
+                            Врачи
+                        </h2>
+                        <div class="all-service-list">
+                            <a href="#" class="service-list_item">
+                                Эндокринолог <span class="service-number">70</span>
+                            </a>
+                            <a href="#" class="service-list_item">
+                                Лор <span class="service-number">110</span>
+                            </a>
+                            <a href="#" class="service-list_item">
+                                Терапевт <span class="service-number">152</span>
+                            </a>
+                            <a href="#" class="service-list_item">
+                                Гинеколог <span class="service-number">116</span>
+                            </a>
+                            <a href="#" class="service-list_item">
+                                Маммолог <span class="service-number">9</span>
+                            </a>
+                            <a href="#" class="service-list_item">
+                                Детский невропатолог <span class="service-number">15</span>
+                            </a>
+                            <a href="#" class="service-list_item">
+                                Невролог <span class="service-number">56</span>
+                            </a>
+                            <a href="#" class="service-list_item">
+                                Уролог <span class="service-number">88</span>
+                            </a>
+                            <a href="#" class="service-list_item">
+                                Узист <span class="service-number">124</span>
+                            </a>
+                            <a href="#" class="service-list_item">
+                                Психоневролог <span class="service-number">3</span>
+                            </a>
+                            <a href="#" class="service-list_item">
+                                Глазной врач <span class="service-number">59</span>
+                            </a>
+                            <a href="#" class="service-list_item">
+                                Травматолог <span class="service-number">32</span>
+                            </a>
+                            <a href="#" class="service-list_item">
+                                Вертебролог <span class="service-number">7</span>
+                            </a>
+                            <a href="#" class="service-list_item">
+                                Ортопед <span class="service-number">65</span>
+                            </a>
+                            <a href="#" class="service-list_item">
+                                Инфекционист <span class="service-number">8</span>
+                            </a>
+                            <a href="#" class="service-list_item">
+                                Кардиолог <span class="service-number">138</span>
+                            </a>
+                            <a href="#" class="service-list_item">
+                                Аллерголог <span class="service-number">18</span>
+                            </a>
+                            <a href="#" class="service-list_item">
+                                Стоматолог <span class="service-number">78</span>
+                            </a>
+                            <a href="#" class="service-list_item">
+                                Дерматолог <span class="service-number">30</span>
+                            </a>
+                            <a href="#" class="service-list_item">
+                                Логопед <span class="service-number">5</span>
+                            </a>
+                            <a href="#" class="service-list_item">
+                                Гастроэнтеролог <span class="service-number">38</span>
+                            </a>
+                            <a href="#" class="service-list_item">
+                                Все 113 специальности
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <section>
-        <div class="container-max-width">
-            <div class="all-services-bloks">
-                <div class="services-wrapper">
-                    <div class="services-block">
-                        <div class="services-header">Врачи</div>
-                        <div class="services-list">
-                            <a href="#" class="service-list_item">
-                                Эндокринолог <span class="service-number">70</span>
-                            </a>
-                            <a href="#" class="service-list_item">
-                                Лор <span class="service-number">110</span>
-                            </a>
-                            <a href="#" class="service-list_item">
-                                Терапевт <span class="service-number">152</span>
-                            </a>
-                            <a href="#" class="service-list_item">
-                                Гинеколог <span class="service-number">116</span>
-                            </a>
-                            <a href="#" class="service-list_item">
-                                Маммолог <span class="service-number">9</span>
-                            </a>
-                            <a href="#" class="service-list_item">
-                                Детский невропатолог <span class="service-number">15</span>
-                            </a>
-                            <a href="#" class="service-list_item">
-                                Невролог <span class="service-number">56</span>
-                            </a>
-                            <a href="#" class="service-list_item">
-                                Уролог <span class="service-number">88</span>
-                            </a>
-                            <a href="#" class="service-list_item">
-                                Узист <span class="service-number">124</span>
-                            </a>
-                            <a href="#" class="service-list_item">
-                                Психоневролог <span class="service-number">3</span>
-                            </a>
-                            <a href="#" class="service-list_item">
-                                Глазной врач <span class="service-number">59</span>
-                            </a>
-                            <a href="#" class="service-list_item">
-                                Травматолог <span class="service-number">32</span>
-                            </a>
-                            <a href="#" class="service-list_item">
-                                Вертебролог <span class="service-number">7</span>
-                            </a>
-                            <a href="#" class="service-list_item">
-                                Ортопед <span class="service-number">65</span>
-                            </a>
-                            <a href="#" class="service-list_item">
-                                Инфекционист <span class="service-number">8</span>
-                            </a>
-                            <a href="#" class="service-list_item">
-                                Кардиолог <span class="service-number">138</span>
-                            </a>
-                            <a href="#" class="service-list_item">
-                                Аллерголог <span class="service-number">18</span>
-                            </a>
-                            <a href="#" class="service-list_item">
-                                Стоматолог <span class="service-number">78</span>
-                            </a>
-                            <a href="#" class="service-list_item">
-                                Дерматолог <span class="service-number">30</span>
-                            </a>
-                            <a href="#" class="service-list_item">
-                                Логопед <span class="service-number">5</span>
-                            </a>
-                            <a href="#" class="service-list_item">
-                                Гастроэнтеролог <span class="service-number">38</span>
-                            </a>
-                            <a href="#" class="service-list_item">
-                                Все 113 специальности
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="services-wrapper other-block">
-                    <div class="services-block">
-                        <div class="services-header">Врачи</div>
-                        <div class="services-list">
-                            <a href="#" class="service-list_item">
-                                Эндокринолог <span class="service-number">70</span>
-                            </a>
-                            <a href="#" class="service-list_item">
-                                Лор <span class="service-number">110</span>
-                            </a>
-                            <a href="#" class="service-list_item">
-                                Терапевт <span class="service-number">152</span>
-                            </a>
-                            <a href="#" class="service-list_item">
-                                Гинеколог <span class="service-number">116</span>
-                            </a>
-                            <a href="#" class="service-list_item">
-                                Маммолог <span class="service-number">9</span>
-                            </a>
-                            <a href="#" class="service-list_item">
-                                Детский невропатолог <span class="service-number">15</span>
-                            </a>
-                            <a href="#" class="service-list_item">
-                                Невролог <span class="service-number">56</span>
-                            </a>
-                            <a href="#" class="service-list_item">
-                                Уролог <span class="service-number">88</span>
-                            </a>
-                            <a href="#" class="service-list_item">
-                                Узист <span class="service-number">124</span>
-                            </a>
-                            <a href="#" class="service-list_item">
-                                Психоневролог <span class="service-number">3</span>
-                            </a>
-                            <a href="#" class="service-list_item">
-                                Глазной врач <span class="service-number">59</span>
-                            </a>
-                            <a href="#" class="service-list_item">
-                                Травматолог <span class="service-number">32</span>
-                            </a>
-                            <a href="#" class="service-list_item">
-                                Вертебролог <span class="service-number">7</span>
-                            </a>
-                            <a href="#" class="service-list_item">
-                                Ортопед <span class="service-number">65</span>
-                            </a>
-                            <a href="#" class="service-list_item">
-                                Инфекционист <span class="service-number">8</span>
-                            </a>
-                            <a href="#" class="service-list_item">
-                                Кардиолог <span class="service-number">138</span>
-                            </a>
-                            <a href="#" class="service-list_item">
-                                Аллерголог <span class="service-number">18</span>
-                            </a>
-                            <a href="#" class="service-list_item">
-                                Стоматолог <span class="service-number">78</span>
-                            </a>
-                            <a href="#" class="service-list_item">
-                                Дерматолог <span class="service-number">30</span>
-                            </a>
-                            <a href="#" class="service-list_item">
-                                Логопед <span class="service-number">5</span>
-                            </a>
-                            <a href="#" class="service-list_item">
-                                Гастроэнтеролог <span class="service-number">38</span>
-                            </a>
-                            <a href="#" class="service-list_item">
-                                Все 113 специальности
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="services-wrapper other-block">
-                    <div class="services-block">
-                        <div class="services-header">Врачи</div>
-                        <div class="services-list">
-                            <a href="#" class="service-list_item">
-                                Эндокринолог <span class="service-number">70</span>
-                            </a>
-                            <a href="#" class="service-list_item">
-                                Лор <span class="service-number">110</span>
-                            </a>
-                            <a href="#" class="service-list_item">
-                                Терапевт <span class="service-number">152</span>
-                            </a>
-                            <a href="#" class="service-list_item">
-                                Гинеколог <span class="service-number">116</span>
-                            </a>
-                            <a href="#" class="service-list_item">
-                                Маммолог <span class="service-number">9</span>
-                            </a>
-                            <a href="#" class="service-list_item">
-                                Детский невропатолог <span class="service-number">15</span>
-                            </a>
-                            <a href="#" class="service-list_item">
-                                Невролог <span class="service-number">56</span>
-                            </a>
-                            <a href="#" class="service-list_item">
-                                Уролог <span class="service-number">88</span>
-                            </a>
-                            <a href="#" class="service-list_item">
-                                Узист <span class="service-number">124</span>
-                            </a>
-                            <a href="#" class="service-list_item">
-                                Психоневролог <span class="service-number">3</span>
-                            </a>
-                            <a href="#" class="service-list_item">
-                                Глазной врач <span class="service-number">59</span>
-                            </a>
-                            <a href="#" class="service-list_item">
-                                Травматолог <span class="service-number">32</span>
-                            </a>
-                            <a href="#" class="service-list_item">
-                                Вертебролог <span class="service-number">7</span>
-                            </a>
-                            <a href="#" class="service-list_item">
-                                Ортопед <span class="service-number">65</span>
-                            </a>
-                            <a href="#" class="service-list_item">
-                                Инфекционист <span class="service-number">8</span>
-                            </a>
-                            <a href="#" class="service-list_item">
-                                Кардиолог <span class="service-number">138</span>
-                            </a>
-                            <a href="#" class="service-list_item">
-                                Аллерголог <span class="service-number">18</span>
-                            </a>
-                            <a href="#" class="service-list_item">
-                                Стоматолог <span class="service-number">78</span>
-                            </a>
-                            <a href="#" class="service-list_item">
-                                Дерматолог <span class="service-number">30</span>
-                            </a>
-                            <a href="#" class="service-list_item">
-                                Логопед <span class="service-number">5</span>
-                            </a>
-                            <a href="#" class="service-list_item">
-                                Гастроэнтеролог <span class="service-number">38</span>
-                            </a>
-                            <a href="#" class="service-list_item">
-                                Все 113 специальности
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <div class="container-max-width">
+        <div class="container">
             <div class="sale-container">
                 <div class="sale-wrapper">
                     <div class="sale-info">
@@ -1082,7 +602,7 @@
                         </p>
                     </div>
                     <div class="sale-img">
-                        <img src="./images/sale-photo.png" alt="sale">
+                        <img class="img-fluid" src="./images/sale-photo.png" alt="sale">
                     </div>
                 </div>
             </div>
@@ -1090,9 +610,9 @@
     </section>
 
     <section>
-        <div class="container-max-width">
+        <div class="container">
             <div class="sale-cards-container">
-                <div class="sale-cards">
+                <div class="sale-cards row">
                     <div class="sale-card-container">
                         <div class="sale-card">
                             <div class="sale-card-img">
@@ -1220,113 +740,83 @@
     </section>
 
     <section>
-        <div class="container-max-width">
-            <div class="special-days-container container">
-                <div class="special-days-cards row">
-                    <div class="special-day-card col">
-                        <div class="special-day-img-container">
-                            <img src="./images/special-day1.jpg" alt="">
-                        </div>
-                        <div class="special-day-card-info">
-                            <div class="special-day-header">
-                                <h5 class="special-day-title">
-                                    Родинки наружу?Меланому обнаружу!
-                                </h5>
-                                <p class="special-day-date">
-                                    18.09.2022 13:10
-                                </p>
-                            </div>
-                            <div class="special-day-desc">
-                                <p>
-                                    Про родинки<br>🔍Родинки или, если употреблять медицинскую терминологию- невусы,
-                                    появляются в результате скопления пигмента меланина в клетках кожи. Они могут быть
-                                    различных
-                                    размеров, цветов и форм.<br>Существуют врождённые и приобретённые родинки.
-                                    Врождённые
-                                    родинки начинают появляться уже в первые годы жизни и практически не имеют риска
-                                    перерождения в злокачественную опухоль.<br>Невусы, которые появляются в период
-                                    полового
-                                    созревания, гормональных всплесков или под влиянием ультрафиолета, считаются
-                                    приобретёнными. Такие родинки являются более склонными к перерождению и требуют к
-                                    себе
-                                    пристального внимания.
-                                </p>
-                            </div>
+        <div class="container">
+            <div class="special-days row">
+                <a href="#" class="col-12 col-lg-4 special-day">
+                    <div class="md-card-img-container">
+                        <img class="img-fluid" src="./images/special-day1.jpg" alt="">
+                        <div class="special-day-header-sm">
+                            <h5>Родинки наружу?Меланому обнаружу!</h5>
+                            <p class="card-date">18.09.2022 13:10</p>
                         </div>
                     </div>
-                    <div class="special-day-card col">
-                        <div class="special-day-img-container">
-                            <img src="./images/special-day2.jpg" alt="">
-                        </div>
-                        <div class="special-day-card-info">
-                            <div class="special-day-header">
-                                <h5 class="special-day-title">
-                                    Антибиотики от вируса не лечат,бактерии колечат!
-                                </h5>
-                                <p class="special-day-date">
-                                    12.09.2022 18:05
-                                </p>
-                            </div>
-                            <div class="special-day-desc">
-                                <p>АНТИБИОТИКОРЕЗИСТЕНТНОСТЬ.</p>
-
-                                <p>
-                                    Устойчивость к антибиотикам является сегодня одной из наиболее серьезных угроз для
-                                    здоровья человечества. Особенно период пандемии Ковид-19 усугубил это положение,
-                                    потому
-                                    что не зная, как лечить это заболевание, люди поголовно начали принимать антибиотики
-                                    для
-                                    профилактики и на всякий случай.
-                                </p>
-                            </div>
+                    <div class="special-day-header">
+                        <h5>Родинки наружу?Меланому обнаружу!</h5>
+                        <p class="card-date">18.09.2022 13:10</p>
+                    </div>
+                    <p class="special-day-text">
+                        Устойчивость к антибиотикам является сегодня одной из наиболее серьезных угроз для здоровья
+                        человечества. Особенно период пандемии Ковид-19 усугубил это положение, потому что не зная, как
+                        лечить это заболевание, люди поголовно начали принимать антибиотики для профилактики и на всякий
+                        случай.
+                    </p>
+                </a>
+                <a href="#" class="col-12 col-lg-4 special-day">
+                    <div class="md-card-img-container">
+                        <img class="img-fluid" src="./images/special-day1.jpg" alt="">
+                        <div class="special-day-header-sm">
+                            <h5>Родинки наружу?Меланому обнаружу!</h5>
+                            <p class="card-date">18.09.2022 13:10</p>
                         </div>
                     </div>
-                    <div class="special-day-card col">
-                        <div class="special-day-img-container">
-                            <img src="./images/special-day3.jpg" alt="">
-                        </div>
-                        <div class="special-day-card-info">
-                            <div class="special-day-header">
-                                <h5 class="special-day-title">
-                                    Нервы магний очень любят.Стресс их быстро не погубит
-                                </h5>
-                                <p class="special-day-date">
-                                    30.08.2022 09:00
-                                </p>
-                            </div>
-                            <div class="special-day-desc">
-                                <p>
-                                <p>Магний и нервная система.</p>
-
-                                <p>💊Особо важна роль магния в процессах образования ферментов. Магний способствует
-                                    расслаблению мышечного слоя в сосудах. Важнейшее его значение состоит в том, что он
-                                    служит естественным антистрессовым фактором, тормозит процессы возбуждения в
-                                    головном
-                                    мозгу и снижает чувствительность организма к внешним воздействиям.&nbsp;<br>
-                                    А вы знали об этом?&nbsp;<br>
-                                    Если нет, с вас срочно лайк.❤️
-                                </p>
-                                </p>
-                            </div>
+                    <div class="special-day-header">
+                        <h5>Родинки наружу?Меланому обнаружу!</h5>
+                        <p class="card-date">18.09.2022 13:10</p>
+                    </div>
+                    <p class="special-day-text">
+                        Устойчивость к антибиотикам является сегодня одной из наиболее серьезных угроз для здоровья
+                        человечества. Особенно период пандемии Ковид-19 усугубил это положение, потому что не зная, как
+                        лечить это заболевание, люди поголовно начали принимать антибиотики для профилактики и на всякий
+                        случай.
+                    </p>
+                </a>
+                <a href="#" class="col-12 col-lg-4 special-day">
+                    <div class="md-card-img-container">
+                        <img class="img-fluid" src="./images/special-day1.jpg" alt="">
+                        <div class="special-day-header-sm">
+                            <h5>Родинки наружу?Меланому обнаружу!</h5>
+                            <p class="card-date">18.09.2022 13:10</p>
                         </div>
                     </div>
-                </div>
+                    <div class="special-day-header">
+                        <h5>Родинки наружу?Меланому обнаружу!</h5>
+                        <p class="card-date">18.09.2022 13:10</p>
+                    </div>
+                    <p class="special-day-text">
+                        Устойчивость к антибиотикам является сегодня одной из наиболее серьезных угроз для здоровья
+                        человечества. Особенно период пандемии Ковид-19 усугубил это положение, потому что не зная, как
+                        лечить это заболевание, люди поголовно начали принимать антибиотики для профилактики и на всякий
+                        случай.
+                    </p>
+                </a>
             </div>
-            <a href="#" class="see-all-sales special-day-button">Открыть все статьи</a>
         </div>
+        <a href="#" class="see-all-sales">Посмотреть все акции</a>
     </section>
 
-    <footer>
-        <div class="container-max-width">
-            <div class="footer-wrapper">
-                <div class="footer-logo-container">
+    <footer class="dm-footer-bg">
+        <div class="container">
+            <div class="footer-wrapper row">
+                <div class="footer-logo-container col-xl-auto  order-1 order-xl-0 mb-xl-5">
                     <div class="footer-logo">
                         <img src="./images/logo.png" alt="">
                     </div>
-                    <b>©2021. Yaqin Doctor</b>
+                    <p>
+                        <b>©2021. Yaqin Doctor</b>
+                    </p>
                     <p>Все права защищены</p>
                 </div>
-                <div class="footer-nav">
+                <div class="col-6 col-lg-auto mb-5">
                     <h5 class="footer-header">
                         Сервис
                     </h5>
@@ -1339,7 +829,7 @@
                         <li class="footer-nav-item"><a href="#">Блог</a></li>
                     </ul>
                 </div>
-                <div class="footer-nav">
+                <div class="col-6 col-lg-auto mb-5">
                     <h5 class="footer-header">
                         Пациенту
                     </h5>
@@ -1350,24 +840,24 @@
                         <li class="footer-nav-item"><a href="#">Врачи</a> </li>
                     </ul>
                 </div>
-                <div class="footer-contact-container">
+                <div class="col-sm-6 col-lg-auto mb-5">
                     <h5 class="footer-header">
                         Контакты
                     </h5>
                     <div class="footer-contacts">
                         <a href="#" class="telegram-bot">
-                            <i class='bx bxl-telegram'></i>&nbsp; Телеграм бот Yaqin Doctor
+                            <i class='fas fa-paper-plane'></i>&nbsp; Телеграм бот Yaqin Doctor
                         </a>
-                        <a href="tel:+998997944423" class="phone-number"><i class='bx bx-phone'></i>&nbsp; +998 95 027
+                        <a href="tel:+998997944423" class="phone-number"><i class='fas fa-phone'></i>&nbsp; +998 95 027
                             88 77</a>
                         <div class="footer-media-icon">
-                            <a href="#"><i class='bx bxl-telegram'></i></a>
-                            <a href="#"><i class='bx bxl-instagram'></i></a>
-                            <a href="#"><i class='bx bxl-facebook'></i></a>
+                            <a href="#"><i class='fas fa-paper-plane'></i></a>
+                            <a href="#"><i class='fab fa-instagram'></i></a>
+                            <a href="#"><i class='fab fa-facebook-f'></i></a>
                         </div>
                     </div>
                 </div>
-                <div class="download-app-container">
+                <div class="download-app-container col-sm-6 col-lg-auto">
                     <h5 class="footer-header">Скачивайте приложение</h5>
                     <div class="download-links">
                         <a href="#" target="_blank" rel="noopener noreferrer">
@@ -1384,17 +874,6 @@
             </div>
         </div>
     </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
-        integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
-        crossorigin="anonymous"></script>
-
     <script src="script.js"></script>
 </body>
 

@@ -1,18 +1,22 @@
-const navLink = document.querySelector(".nav-link")
+const mdNavItem = document.querySelector(".md-nav-item")
 const tabMenu = document.querySelector(".tab-menu-wrapper")
-const testLink = document.querySelector(".test-link")
-const menuNavItem = document.querySelector(".menu-nav-item");
-const navItems = document.querySelectorAll(".nav-item")
+const mdNavLink = document.querySelector(".md-nav-link")
 const languageBtn = document.querySelector(".language-btn")
 const languagesContainer = document.querySelector(".languages-container")
-navItems.forEach(x=>x.addEventListener("mouseover", ()=>{
-    x.classList.add("menu-nav-item")
-}))
 
-navItems.forEach(x=>x.addEventListener("mouseout", ()=>{
-    x.classList.remove("menu-nav-item")
-}))
+mdNavItem.addEventListener("mouseover", ()=>{
+    mdNavItem.classList.add("active")
+    mdNavLink.style.color = "#4c6fff"
+    tabMenu.style.display = "block"
+})
 
-languageBtn.addEventListener("click", ()=>{
+mdNavItem.addEventListener("mouseout", ()=>{
+    mdNavItem.classList.remove("active")
+    mdNavLink.style.color = "#fff"
+    tabMenu.style.display = "none"
+})
+
+// SHOW LANGUAGES 
+languageBtn.addEventListener("click", () => {
     languagesContainer.style.display == 'block' ? languagesContainer.style.display = 'none' : languagesContainer.style.display = 'block'
 })
