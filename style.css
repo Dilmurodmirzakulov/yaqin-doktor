@@ -865,9 +865,20 @@ b {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-    .md-navbar {
+
+    .sm-position{
+        position: fixed;
+        background-color: #4c6fff;
+        padding: .5rem 2rem;
+        width: 100%;
+        margin-left: -12px;
+        z-index: 100;
+        margin-top: -10px;
         border-radius: 0 0 1rem 1rem;
     }
+    /* .md-navbar {
+        border-radius: 0 0 1rem 1rem;
+    } */
 
     .md-first-nav .md-nav-item,
     .coworking {
@@ -901,7 +912,7 @@ b {
     }
 
     h1 {
-        margin-bottom: 2rem;
+        margin: 5rem 0 2rem;
         font-size: 1.75rem;
         color: #3754db;
         text-align: center;
@@ -1047,7 +1058,14 @@ b {
 }
 
 @media screen and (max-width: 767px) {
-    .md-navbar {
+    .sm-position{
+        position: fixed;
+        background-color: #4c6fff;
+        padding: .5rem 2rem;
+        width: 100%;
+        margin-left: -12px;
+        z-index: 100;
+        margin-top: -10px;
         border-radius: 0 0 1rem 1rem;
     }
 
@@ -1070,7 +1088,7 @@ b {
     }
 
     h1 {
-        margin-bottom: 2rem;
+        margin: 5rem 0 2rem;
         font-size: 1.75rem;
         color: #3754db;
         text-align: center;
